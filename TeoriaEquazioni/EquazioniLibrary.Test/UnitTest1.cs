@@ -18,7 +18,7 @@ namespace EquazioniLibrary.Test
         [TestMethod]
         public void TestIsDetermired1()
         { 
-            double a = 0;
+            double a = 0; 
             double b= 0 ;
             bool respattesa = false, resp = Equazioni.IsDetermired(a,b );
             Assert.AreEqual(respattesa, resp);
