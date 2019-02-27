@@ -11,9 +11,20 @@ namespace EquazioniLibrary
         public static bool IsDetermired(double a, double b)
         {
             bool risp = true;
-            if (a != 0&& b !=0)
+            if (a != 0 && b !=0)
             {
                 risp = false;
+            }
+
+            return risp;
+
+        }
+        public static bool IsNotDetermired(double a, double b)
+        {
+            bool risp = false;
+            if (a == 0 && b == 0)
+            {
+                risp = true;
             }
 
             return risp;
@@ -25,6 +36,19 @@ namespace EquazioniLibrary
             if (b != 0 && a == 0)
             {
                 risp = true;
+            }
+
+            return risp;
+        
+
+
+        }
+        public static bool IsDegree2 (double a, double b,double c)
+        {
+            bool risp = false;
+            if (b != 0 && a == 0 && c!=0)
+            {
+                risp = false;
             }
 
             return risp;
